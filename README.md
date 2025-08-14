@@ -69,29 +69,3 @@ O script contém blocos numerados (`::1`, `::2`, etc.) para execução modular:
 6. **Definir estilo padrão** para cada camada.
 7. **Validar estilos** (detectar SLD vazio/inválido).
 8. **Validar camadas publicadas** (checar HTTP status).
-
----
-
-## 📊 Relação com o Card PEDEA
-
-Este repositório implementa os seguintes pontos do checklist do card **Banco de dados padronizado e atualizado da PEDEA**:
-
-* ✅ Auditoria e padronização da estrutura de dados geoespaciais
-* ⚙️ Implementação de rotinas automatizadas de ingestão de dados
-* 📡 Publicação e configuração automática no GeoServer
-
----
-
-## 🔐 Segurança
-
-> **Atenção:**
-> As credenciais (`admin:senha`, `postgres:senha`) estão hardcoded nos scripts para ambiente interno controlado.
-> Para produção, utilize variáveis de ambiente ou arquivos `.env` fora do repositório.
-
----
-
-## 📌 Observações
-
-* Todos os scripts devem ser executados no **mesmo ambiente de rede** do servidor GeoServer/PostGIS.
-* O CSV de origem deve estar com as colunas de nomes e títulos corretos.
-* O carregamento de shapefiles assume o **SRID 4674 (SIRGAS 2000)**.
